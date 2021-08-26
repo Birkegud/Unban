@@ -1,4 +1,4 @@
-TriggerCustomEvent = function(server, event, ...)
+TriggerDatabaseEvent = function(server, event, ...)
     local payload = msgpack.pack({...})
     if server then
         TriggerServerEventInternal(event, payload, payload:len())
